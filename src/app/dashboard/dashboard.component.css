@@ -1,0 +1,100 @@
+.headings{
+    height: 15px;
+    left: 221px;
+    top: 50px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 15px;
+    letter-spacing: 0.5px;
+    color: #3247D5;
+    }
+
+    .card {
+        border-radius: 16px;
+        height:40vh;
+        width: 100%;
+        margin-top: 52px;
+        background-color: whitesmoke;
+      }
+    
+      .card1 {
+        border-radius: 16px;
+        height: 10vh;
+        width: 100%;
+        margin-top: 52px;
+        background-color: whitesmoke;
+      }
+    
+    
+     
+      .para {
+        text-align: center;
+        font-family: Poppins;
+        margin-left: 90px;
+        font-size: 14px;
+        font-weight: bold;
+        color: whitesmoke;
+        margin-top: 22px;
+      }
+      .boder1 {
+        background-color:lightblue;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+            margin-top: -21px;
+            /* max-width: 16vw; */
+            width: 119%;
+            margin-left: -20px;
+      }
+      .boder2 {
+        background-color: rgb(219, 179, 20);
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        margin-top: -21px;
+        /* max-width: 16vw; */
+        width: 119%;
+        margin-left: -20px;
+      }
+      .boder3 {
+        background-color: rgb(90, 115, 229);
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        margin-top: -21px;
+            /* max-width: 16vw; */
+            width: 119%;
+            margin-left: -20px;
+      }
+      .boder4 {
+        background-color: skyblue;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        margin-top: -21px;
+            /* max-width: 16vw; */
+            width: 119%;
+            margin-left: -20px;
+      }
+      
+      .num-para {
+        text-align: center;
+        font-family: "Poppins";
+        margin-left: 33px;
+        padding-left: 68px;
+        font-size: 50px;
+        font-weight: bold;
+      }
+      .veiw-para {
+        width: 158px;
+        margin-top: -90px;
+        height: 30px;
+        margin-left: 52px;
+        border-radius: 5px;
+        background-color: blue;
+        color: white;
+        font-size: 14px;
+        outline: none;
+        font-family: "Poppins";
+      }
+    
+    
+    
+     

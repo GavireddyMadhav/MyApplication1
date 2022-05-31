@@ -1,0 +1,46 @@
+.headings{
+    height: 15px;
+    left: 221px;
+    top: 100px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 15px;
+    letter-spacing: 0.5px;
+    color: #3247D5;
+    }
+
+ card {
+        /* border-radius: 16px; */
+        height:80vh;
+        width: 106%;
+        margin-top: 31px;
+        background-color:whitesmoke;
+    
+    } 
+
+    /* .text3{
+        background-color: aqua;
+    } */
+
+
+    .card5 {
+        height: 55px;
+        background: skyblue;
+        border-radius: 0px;
+        padding-top: 8px;
+        margin-top: 10px;
+        color: white;
+        
+    }
+    
+
+.dwn-img{
+    height: 154px;
+    /* padding: 2%; */
+    margin-top: -20px;
+    /* min-width: 3vw; */
+    width: 290px;
+    margin-left: -19px;
+    border-radius: 11px;
+}

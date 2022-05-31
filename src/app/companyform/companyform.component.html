@@ -1,0 +1,64 @@
+<div class="container-fluid">
+    <br>
+
+    <label class="headings">Company Form</label>
+    <br>
+    <br>
+    <div class="card">
+
+        <div class="row">
+            <div class="col-lg-2">
+                <label for="">Company name</label><br>
+                <input type="text" class="form-control" placeholder="Company Name.." [(ngModel)]="name">
+            </div>
+            <div class="col-lg-2">
+                <label for="">Address</label><br>
+                <input type="text" class="form-control" placeholder="Address.." [(ngModel)]="address">
+            </div>
+            <div class="col-lg-2">
+                <label for="">Phone.No</label><br>
+                <input type="text" class="form-control" placeholder="Phone.No.." [(ngModel)]="phoneno">
+            </div>
+            <!-- <div class="col-lg-2">
+                <label for="">Email</label><br>
+                <input type="text" class="form-control" placeholder="Email.." [(ngModel)]="name">
+            </div> -->
+            <div class="col-lg-2">
+                <label for="">ContactPerson</label><br>
+                <input type="text" class="form-control" placeholder="ContactPerson.." [(ngModel)]="contactperson">
+            </div>
+            <div class="col-lg-2">
+                <label for="">Reg.Date</label><br>
+                <input type="date" class="form-control" placeholder="Reg.Date.." [(ngModel)]="regdate">
+            </div>
+        </div>
+        <br>
+        <br>
+
+
+        <div class="row">
+            <div class="col-lg-2">
+                <label for="">No.Of Emmployee</label><br>
+                <input type="text" class="form-control" placeholder="No.Of Emmployee.." [(ngModel)]="noofemployee">
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-lg-8"></div>
+
+            <div class="col0lg-2">
+                <button   *ngIf="id==undefined||id==null" (click)="submit()"routerLink="/Company" class="addnew">Submit</button>
+                <button   *ngIf="id!=undefined||id!=null" (click)="edit()"routerLink="/Company" class="addnew">update</button>
+            </div>
+            <div class="col0lg-2">
+                <button routerLink="/Company" class="addnew">Cancle</button>
+                <btn></btn>
+            </div>
+
+        </div>
+
+
+    </div>
+</div>

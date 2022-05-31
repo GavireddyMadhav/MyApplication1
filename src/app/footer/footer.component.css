@@ -1,0 +1,14 @@
+.footer{
+    text-align: center;
+}
+
+.card1 {
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 1px 1px 15px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 12px;
+    width: 458%;
+    margin-left:-20px;
+    text-align: center;
+    font-family:'Poppins';
+  }

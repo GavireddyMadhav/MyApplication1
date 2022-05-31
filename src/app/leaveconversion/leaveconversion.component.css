@@ -1,0 +1,28 @@
+.headings{
+    height: 15px;
+    left: 221px;
+    top: 50px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 15px;
+    letter-spacing: 0.5px;
+    color: #3247D5;
+    }
+
+    .emp{
+        font-size: 16px;
+    }
+    .leave{
+        margin-top: -45px;
+    }
+
+    .card1 {
+        height: 30vh;
+        padding: 20px;
+        background: #ffffff;
+        box-shadow: 1px 1px 15px 3px rgba(0, 0, 0, 0.12);
+        border-radius: 12px;
+        width: 100%;
+        margin-left:-20px;
+      }

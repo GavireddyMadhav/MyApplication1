@@ -1,0 +1,32 @@
+.headings{
+    height: 15px;
+    left: 221px;
+    top: 100px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 15px;
+    letter-spacing: 0.5px;
+    color: #3247D5;
+    }
+    .addnew2{
+        width: 116px;
+        height: 37px;
+        background: #3247D5;
+        border-radius: 5px;
+        color: white;
+        text-align: center;
+        border: none;
+        /* float: right; */
+        /* margin-right: 10px; */
+    }
+
+
+    .card1 {
+        padding: 20px;
+        background: #ffffff;
+        box-shadow: 1px 1px 15px 3px rgba(0, 0, 0, 0.12);
+        border-radius: 12px;
+        width: 100%;
+        margin-left:0;
+      }

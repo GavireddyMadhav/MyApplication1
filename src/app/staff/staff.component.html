@@ -1,0 +1,134 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-11">
+            <br>
+            <label class="headings">Staff Dashboard </label>
+        </div>
+    </div>
+    <br>
+    <div class="card staff">
+        <div class="row">
+            <div class="col-lg-2">
+                <h6>Filter By</h6>
+            </div>
+            <div class="col-lg 1">
+                <select  style="width:90%" name="" id="" class="form-control"  [(ngModel)]="asubsidiaryid"
+                (change)="filtersubsidiary">
+                    <option value="0" >Assigned Subsidiary</option>
+                    <option  *ngFor="let list of staff"value="{{list.id}}">{{list.asubsidiary}}</option>
+                   
+                </select>
+            </div>
+
+
+            <div class="col-lg 1">
+                <select  style="width:90%" name="" id="" class="form-control" placeholder="Select Department" [(ngModel)]="departmentid"
+                (change)="filterdepartment()">
+                    <option value="0">Select Department</option>
+                    <option  *ngFor="let list of staff"value="{{list.id}}">{{list.department}}</option>
+                   
+                </select>
+            </div>
+
+
+            <div class="col-lg 1">
+                <select  style="width: 90%" name="" id="" class="form-control" placeholder="Select Level"[(ngModel)]="levelid"
+                (change)="filterlevel()">
+                    <option value="0">Select Level</option>
+                   <option *ngFor="let list of staff" value="{{list.id}}">{{list.level}}</option>
+
+                </select>
+            </div>
+
+            <div class="col-lg 1">
+                <select  style="width:90%" name="" id="" class="form-control" placeholder="Select Position" [(ngModel)]="positionid"
+                (change)="filterposition()">
+                    <option value="0">Select Position</option>
+                   <option  *ngFor="let list1 of staff" value="{{list1.id}}">{{list1.position}}</option>
+
+                </select>
+            </div>
+            
+        </div>
+    <br>
+        <div class="row">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-3">
+                <input  style="width: 105%;" type="text" placeholder="search for staff" class="form-control" [(ngModel)]="search">
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <div class="row">
+        <div class="col-lg-8">
+            <label class="headings">SHOWING 97 RESULTS</label>
+        </div>
+        <div class="col-lg-2">
+            <button class="addnew">UPLOAD STAFF</button>
+        </div>
+        <div class="col-lg-2">
+            <button  routerLink="/Staffform"class="addnew">Add NEW</button>
+        </div>
+    </div>
+    <br>
+    <div class="row ">
+        <div class="col-lg-12" style="overflow: auto">
+            <div>
+                <table class="table">
+                    <tr>
+                        <th>Id</th>
+                        <th>Employee Name</th>
+                        <th>parent Subsidiary</th>
+                        <th>Assigned Subsidiary</th>
+                        <th>Department</th>
+                        <th>Leve1</th>
+                        <th>Gender </th>
+                        <th>Position</th>
+                        <th>Phone Number</th>
+                        <th>Email</th>
+                        <th>Date of Joining</th>
+                        <th>Manager</th>
+                        <th>Actions</th>
+
+                    </tr>
+                    <tr *ngFor="let list of staff |filter:search  ">
+                        <td>{{list.id}}</td>
+                        <td>{{list.name}}</td>
+                        <td>{{list.subsidiary}}</td>
+                        <td>{{list.asubsidiary}}</td>
+                        <td>{{list.department}}</td>
+                        <td>{{list.level}}</td>
+                        <td>{{list.gender}}</td>
+                        <td>{{list.position}}</td>
+                        <td>{{list.phoneno}}</td>
+                        <td>{{list.email}}</td>
+                        <td>{{list.date}}</td>
+                        <td>{{list.manager}}</td>
+                        <td style="display: inline-block;white-space: nowrap;">
+                            <!-- <button  (click)="edit(list.id)" class="fa fa-pencil-square-o"></button>
+                            <button (click)="delete(list.id)" class="fa fa-trash"></button> -->
+
+                            <i    (click)="edit(list.id)" style="color: blue; width:20px; font-size:18px;"class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                           <i style="color: blue; width:20px;font-size:18px;"  class="fa fa-sticky-note" aria-hidden="true"></i>
+                            <i    (click)="delete(list.id)" style="color: blue; width:20px;font-size:18px;" class="fa fa-trash" aria-hidden="true"></i>
+
+                            <br>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                              </label>
+                        </td>
+                    </tr>
+                  
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+</div>

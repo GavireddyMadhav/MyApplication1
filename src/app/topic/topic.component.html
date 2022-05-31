@@ -1,0 +1,40 @@
+<div class="container-fluid ">
+    <br>
+    
+
+    <div class="row">
+        <div class="col-lg-11">
+            <label class="headings"> Topic Dashboard</label>
+        </div>
+        <div class="col-lg-1">
+
+            <button routerLink="/Topicform" class="addnew">Add</button>
+
+        </div>
+    </div>
+    <br>
+
+    <div class="row ">
+        <div class="col-lg-12" style="overflow: auto">
+            <div>
+                <table class="table">
+                    <tr>
+                        <th>ID</th>
+                        <th>Training name</th>
+                        <th>Training Description</th>
+                        <th>Actions</th>
+                       
+                    </tr>
+                    <tr *ngFor="let list of training">
+                        <td>{{list.id}}</td>
+                        <td>{{list.tname}}</td>
+                        <td>{{list.tdescription}}</td>
+                        <td><button (click)="edit(list.id)" class="addnew1">edit</button>&nbsp;
+                            <button (click)="delete(list.id)" class="addnew1">delete</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

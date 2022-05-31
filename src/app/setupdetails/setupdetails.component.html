@@ -1,0 +1,43 @@
+<div class="container-fluid">
+    <br>
+
+    <label class="headings"> Setup Form</label>
+    <div class="card">
+
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-lg-2">
+                <label for="">Training name</label><br>
+                <input type="text" class="form-control" placeholder="Training name.." [(ngModel)]="tname">
+            </div>
+            <div class="col-lg-2">
+                <label for="">Start Date</label><br>
+                <input type="date" class="form-control" placeholder="Start Date.." [(ngModel)]="sdate" >
+            </div>
+            <div class="col-lg-2">
+                <label for="">Completion Date</label><br>
+                <input type="date" class="form-control" placeholder=""  [(ngModel)]="cdate">
+            </div>
+
+            <div class="col-lg-2">
+                <label for="">Status</label><br>
+                <input type="text" class="form-control" placeholder="Status.." [(ngModel)]="status">
+            </div>
+
+            <div class="col-lg-2">
+                <label for=""></label><br>
+                <button  *ngIf="id==undefined||id==null" (click)="submit()" routerLink="/Setup" class="addnew">Submit</button>
+            </div>
+            <div class="col-lg-2">
+                <label for=""></label><br>
+                <button   routerLink="/Setup "class="addnew">Cancle</button>
+            </div>
+        </div>
+        <br>
+
+
+    </div>
+</div>
+
+

@@ -1,0 +1,77 @@
+<div class="container-fluid ">
+    <br>
+    <div class="row">
+        <div class="col-lg-11">
+            <label class="headings">  Update Dashboard</label>
+        </div>
+        <div class="col-lg-1">
+
+            <button routerLink="/Login" class="addnew">Add</button>
+        </div>
+    </div>
+    <br>
+
+
+    <div class="card">
+        <div class="row">
+            <div class="col-lg-2">
+                <h6>Filter By</h6>
+            </div>
+            <div class="col-lg 4">
+                <input type="text" placeholder="search" class="form-control" style="width: 26%;"  [(ngModel)]="search" >
+
+            </div>
+        </div>
+    </div>
+<br>
+    <div class="row ">
+        <div class="col-lg-12" style="overflow: auto">
+            <div>
+                <table class="table">
+                    <tr>
+                        <th>ID</th>
+                        <th>AddressType</th>
+                        <th>AddressLine1</th>
+                        <th>AddressLine2</th>
+                        <th>AddressLine3</th>
+                        <th>AddressLine4</th>
+                        <th>Country</th>
+                        <th>Province</th>
+                        <th>Barangy</th>
+                        <th>Postcode</th>
+                        <th>ContactNumber</th>
+                        <th>ContactRelationship</th>
+                        <th>Mobilenumber</th>
+                        <th>Officenumber</th>
+                        <th>Landlinenumber</th>
+                        <th>EmailId</th>
+                        <th>Actions</th>
+                    </tr>
+                    <tr *ngFor="let list of address |filter:search">
+                        <td>{{list.id}}</td>
+                        <td>{{list.addresstype}}</td>
+                        <td>{{list.addressline1}}</td>
+                        <td>{{list.addressline2}}</td>
+                        <td>{{list.addressline3}}</td>
+                        <td>{{list.addressline4}}</td>
+                        <td>{{list.country}}</td>
+                        <td>{{list.province}}</td>
+                        <td>{{list.barangy}}</td>
+                        <td>{{list.postcode}}</td>
+                        <td>{{list.contactnumber}}</td>
+                        <td>{{list.contactRelationship}}</td>
+                        <td>{{list.mobilenumber}}</td>
+                        <td>{{list.officeNumber}}</td>
+                        <td>{{list.landlineNumber}}</td>
+                        <td>{{list.emailId}}</td>
+                        <td><button (click)="edit(list.id)" class="addnew">edit</button></td>
+                        <td><button (click)="delete(list.id)" class="addnew">delete</button></td>
+
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+

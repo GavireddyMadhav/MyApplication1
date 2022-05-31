@@ -1,0 +1,75 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-11">
+            <br>
+            <label class="headings">Holiday Dashboard </label>
+        </div>
+    </div>
+<br>
+    <div class="card">
+        <div class="row">
+            <div class="col-lg-2">
+                <h6>Filter By</h6>
+            </div>
+            <div class="col-lg 2">
+                <select  style="width:32%" name="" id="" class="form-control" placeholder="Select Department">
+                    <option value="">Select Department</option>
+                    <option value=""></option>
+                    <option value=""></option>
+
+                </select>
+            </div>
+        </div>
+    </div>
+    <br>
+
+
+
+    <div class="row">
+        <div class="col-lg-11">
+            <label class="headings">SHOWING RESULTS</label>
+        </div>
+        <div class="col-lg-1">
+            <!-- <label>count: 11</label> -->
+            <button routerLink="/Holidayform" class="addnew">ADD NEW</button>
+        </div>
+    </div>
+
+<br>
+
+    <div class="row ">
+        <div class="col-lg-12" style="overflow: auto">
+            <div>
+                <table class="table">
+                    <tr>
+                        <th>Id</th>
+                        <th>Holidays</th>
+                        <th>Holiday Description</th>
+                        <th>Holiday Date</th>
+                        <th>Location</th>
+                        <th>Attachment</th>
+
+                        <th>Actions</th>
+                       
+                    </tr>
+                    <tr *ngFor="let list of holidays">
+                        <td>{{list.id}}</td>
+                        <td>{{list.name}}</td>
+                         <td>{{list.description}}</td>
+                        <td>{{list.date}}</td>
+                        <td>{{list.location}}</td>
+                        <td><img src="{{list.attachment}}" style="height:73px;width:77px"></td>
+
+                        <td><button (click)="edit(list.id)" class="addnew1">Edit</button>
+                            <br>
+                            <br>
+                            <button (click)="delete(list.id)" class="addnew1">Delete</button>
+                        </td>
+                        
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</div>

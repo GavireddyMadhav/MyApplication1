@@ -1,0 +1,70 @@
+<div class="container-fluid">
+    <br>
+    <div class="card">
+        <div class="row">
+            <div class="col-lg-2">
+                <label for="">Employeename</label>
+                <input type="text" placeholder="Employeename.." class="form-control"   [(ngModel)]="name">
+            </div>
+            <div class="col-lg-2">
+                <label for="">parent Subsidiary</label>
+                <input type="text" placeholder="parent Subsidiary.." class="form-control"  [(ngModel)]="subsidiary">
+            </div>
+            <div class="col-lg-2">
+                <label for="">Assigned Subsidiary</label>
+                <input type="text" placeholder="Assigned Subsidiary.." class="form-control"  [(ngModel)]="asubsidiary">
+            </div>
+            <div class="col-lg-2">
+                <label for="">Department</label>
+                <input type="text" placeholder="Department.." class="form-control"  [(ngModel)]="department">
+            </div>
+            <div class="col-lg-2">
+                <label for="">level</label>
+                <input type="text" placeholder="Leve1.." class="form-control"  [(ngModel)]="level">
+            </div>
+            <div class="col-lg-2">
+                <label for="">Gender</label>
+                <input type="text" placeholder="Gender.." class="form-control"  [(ngModel)]="gender">
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-lg-2">
+                <label for="">Position</label>
+                <input type="text" placeholder="Position.." class="form-control"  [(ngModel)]="position">
+            </div>
+            <div class="col-lg-2">
+                <label for="">Phone Number</label>
+                <input type="text" placeholder="Phone Number.." class="form-control"  [(ngModel)]="phoneno">
+            </div>
+            <div class="col-lg-2">
+                <label for="">Email</label>
+                <input type="text" placeholder="Email.." class="form-control"  [(ngModel)]="email">
+            </div>
+            <div class="col-lg-2">
+                <label for=""> Date of Joining</label >
+                <input type="date" placeholder="Date of Joining.." class="form-control"  [(ngModel)]="date">
+            </div>
+            <div class="col-lg-2">
+                <label for="">Manage</label>
+                <input type="text" placeholder="Manage.." class="form-control"  [(ngModel)]="manager">
+            </div>
+
+        </div>
+        <br>
+<br>
+        <div class="row">
+            <div class="col-lg-8"></div>
+            <div class="col-lg-2">
+                
+            <button  class="addnew" *ngIf="id==undefined||id==null" (click)="submit()"  class="addnew"routerLink="/Staff">Submit</button>
+            <button class="addnew" *ngIf="id!=undefined||id!=null" (click)="edit()" routerLink="/Staff">Update</button> 
+            </div>
+            <div class="col-lg-2">
+                <button  class="addnew"routerLink="/Staff">Cancle</button>
+            </div>
+        </div>
+
+    </div>
+</div>

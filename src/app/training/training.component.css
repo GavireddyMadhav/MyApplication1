@@ -1,0 +1,135 @@
+.card {
+    border-radius: 16px;
+    height:40vh;
+    width: 106%;
+    margin-top: 31px;
+    background-color:whitesmoke;
+
+}
+
+.card1 {
+    border-radius: 16px;
+    height:40vh;
+    width: 100%;
+    margin-top: 31px;
+    background-color:black;
+
+}
+
+    
+  .para {
+    /* text-align: center; */
+    font-family: Poppins;
+    margin-left: 90px;
+    font-size: 14px;
+    font-weight: bold;
+    color: whitesmoke;
+    margin-top: 22px;
+    padding-right: 50px;
+  }
+  .boder1 {
+    /* background-color: rgb(119, 186, 231); */
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+        margin-top: -21px;
+        /* max-width: 16vw; */
+        width: 119%;
+        /* margin-left: -20px; */
+  }
+  .boder2 {
+    /* background-color: rgb(219, 179, 20); */
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    margin-top: -21px;
+    /* max-width: 16vw; */
+    width: 119%;
+    margin-left: -20px;
+  }
+  .boder3 {
+    /* background-color: rgb(90, 115, 229); */
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    margin-top: -21px;
+        /* max-width: 16vw; */
+        width: 119%;
+        margin-left: -20px;
+  }
+  .boder4 {
+    /* background-color: skyblue; */
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    margin-top: -21px;
+        /* max-width: 16vw; */
+        width: 119%;
+        margin-left: -20px;
+  }
+  
+  .num-para {
+    text-align: center;
+    font-family: "Poppins";
+    margin-left: 33px;
+    padding-left: 5px;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .veiw-para {
+    width: 158px;
+    margin-top: -61px;
+    height: 30px;
+    margin-left: 52px;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    outline: none;
+    font-family: "Poppins";
+  }
+/* .text{
+    color: white;
+} */
+
+.text{
+    text-align: center;
+}
+
+.notcompleted{
+    padding: 7px;
+    width: 75px;
+    border-radius: 15px;
+    background-color: rosybrown;
+    color: white;
+}
+.notcompleted1{
+    padding: 7px;
+    width: 75px;
+    border-radius: 15px;
+    background-color:violet;
+    color: white;
+}
+.notcompleted2{
+    padding: 7px;
+    width: 75px;
+    border-radius: 15px;
+    background-color: chartreuse;
+    color: white; 
+}.background{
+    background-color: black;
+}
+.text1{
+    color: white;
+    padding-left: 20px; 
+}
+
+.headings{
+  height: 15px;
+  left: 221px;
+  top: 100px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 15px;
+  letter-spacing: 0.5px;
+  color: #3247D5;
+  }
+
+  

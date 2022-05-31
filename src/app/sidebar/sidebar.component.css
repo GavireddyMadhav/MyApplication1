@@ -1,0 +1,17 @@
+
+
+
+.nav{
+    text-decoration: underline;
+
+}
+*{
+    margin: 0;
+    padding: 2px;
+    left: 0;
+    right: 0;
+}
+.align{
+    width:20%;
+    padding: 11px;
+}

@@ -1,0 +1,49 @@
+.cards{
+    padding: 20px;
+          background: #ffffff;
+          box-shadow: 1px 1px 15px 3px rgba(0, 0, 0, 0.12);
+          border-radius: 12px;
+          width: 100%;
+          margin-left:-20px; 
+          height: 30vh;
+          margin-left: 0px;
+}
+
+.alph-text{
+    font-size: 27px;
+}
+.text{
+    text-align: center;
+    margin-top: -74px;
+    line-height: 35px;
+}
+
+
+.headings{
+    height: 15px;
+    left: 221px;
+    top: 50px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 15px;
+    letter-spacing: 0.5px;
+    color: #3247D5;
+    }
+    .dot{
+        height: 60px;
+        width: 63px;
+        border-radius: 50%;
+        background-color: blue;
+        display: inline-block;
+        margin-left: -12px;
+    }
+
+    .alph-text{
+        font-size: 14px;
+        font-weight: bold;
+        font-family: 'poppins';
+        color: white;
+        text-align: center;
+        padding-top: 17px;
+    }

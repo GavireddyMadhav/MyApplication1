@@ -1,0 +1,37 @@
+<div class="container-fluid">
+    <br>
+
+    <label class="headings"> Topic Form</label>
+    <div class="card">
+
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-lg-2">
+                <label for="">Training name</label><br>
+                <input type="text" class="form-control" [(ngModel)]="tname">
+            </div>
+            <div class="col-lg-2">
+                <label for="">training description</label><br>
+                <input type="text" class="form-control"  [(ngModel)]="tdescription">
+            </div>
+          
+
+            <div class="col-lg-2">
+                <label for=""></label><br>
+                <button class="addnew" *ngIf="id==undefined||id==null" (click)="submit()" routerLink="/Topic">Submit</button>
+                <button class="addnew" *ngIf="id!=undefined||id!=null" (click)="edit()" routerLink="/Topic">Update</button>
+            </div>
+            <div class="col-lg-2">
+                <label for=""></label><br>
+                <button class="addnew" routerLink="/Topic">Cancle</button>
+            </div>
+        </div>
+        <br>
+
+
+    </div>
+</div>
+
+
+

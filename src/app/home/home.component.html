@@ -1,0 +1,45 @@
+<div class="container-fluid">
+    <br>
+    <div class="row">
+        <div class="col-lg-3">
+            <div class="cardshome">
+                <div class="row header-text">
+                    <p class="para1">Announcement</p>
+                </div>
+                <br>
+                <p class="home">No
+                    <br>
+                    Announcements
+                    Today!
+                </p>
+            </div>
+        </div>
+
+        <div class="col-lg-3" >
+            <div class="cardshome">
+                <div class="row header-text1">
+                    <p class="para1">Holidays</p>
+                </div>
+                <br>
+                <div class="row"  style="height: 110px;overflow:auto">
+                    <div class="col-lg-2" >
+                        <p  *ngFor="let list of holidays">
+                            <img src="{{list.attachment}}" style="width: 50px;">
+                        </p>
+                        <!-- <img src="../../assets/Image/depavali.jpg" alt="" style="width: 40px; margin-left: -20px;"> -->
+                    </div>
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-6" >
+                        <!-- <p class="home">Deepavali oct
+                            24,2022
+                        </p> -->
+                        <p *ngFor="let list of holidays">
+                            {{list.name}},<br>
+                            {{list.date|date}},
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
